@@ -7,17 +7,19 @@ const titles = {
 
 window.onload = () => {
     const params = new URLSearchParams(window.location.search)
-    const fromTest = params.get("_") != null
-    if (fromTest) {
+    const savedResultParse = parseInt(window.location.hash.slice(1), 32)
+    const savedResult = isNaN(savedResultParse) ? undefined : savedResultParse
+    const isLegit = params.get("_") != null || !isNaN(savedResultParse)
+    if (isLegit) {
         document.getElementById("take-test").style.display = "none"
         document.getElementById("test-result").style.display = "block"
     }
-    console.log("from test:", fromTest)
 
     window.history.replaceState({}, document.title, window.location.href.split("?")[0])
     
-    const checkmarks = [...new Set(params.keys())].filter(key => !isNaN(parseInt(key)))
-    const score = 100 - checkmarks.length
+    const checkmarks = savedResult ? [] : [...new Set(params.keys())].filter(key => !isNaN(parseInt(key)))
+    const score = savedResult ?? 100 - checkmarks.length
+    window.location.hash = score.toString(32)
     
     document.getElementById("score").innerText = score
     
