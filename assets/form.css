@@ -1,0 +1,52 @@
+body {
+    margin: 0;
+}
+
+h1 {
+    margin-bottom: 0;
+}
+h2 {
+    margin-top: 0;
+}
+div {
+    padding: 8px;
+}
+
+form {
+    font-size: 1.4rem;
+    input[type=checkbox] {
+        width: 1.2rem;
+        height: 1.2rem;
+        cursor: pointer;
+        margin-right: 14px;
+    }
+    input[type=submit] {
+        font-size: 1.4rem;
+        width: 100%;
+    }
+}
+
+li {
+    margin-bottom: 0.5rem;
+}
+
+footer {
+    margin-top: 20px;
+    padding: 20px 0px;
+    width: 100%;
+    max-width: 100%;
+    background-color: black;
+    color: white;
+    a {
+        text-decoration: none;
+    }
+    a:link, a:visited {
+        color: white;
+    }
+    a:active, a:hover {
+        color: antiquewhite;
+    }
+    a {
+        padding: 20px;
+    }
+}
