@@ -18,7 +18,7 @@ window.onload = () => {
     window.history.replaceState({}, document.title, window.location.href.split("?")[0])
     
     const checkmarks = savedResult ? [] : [...new Set(params.keys())].filter(key => !isNaN(parseInt(key)))
-    const score = savedResult ?? 12 - checkmarks.length
+    const score = savedResult ?? 14 - checkmarks.length
     window.location.hash = score.toString(32)
     
     document.getElementById("score").innerText = score
