@@ -1,0 +1,64 @@
+body {
+    margin: 0;
+    background-color: #f6f6f6;
+}
+
+h1 {
+    margin-bottom: 0;
+}
+h2 {
+    margin-top: 0;
+}
+div {
+    padding: 8px;
+}
+
+form {
+    font-size: 1.4rem;
+    input[type=checkbox] {
+        width: 1.2rem;
+        height: 1.2rem;
+        cursor: pointer;
+        margin-right: 14px;
+        accent-color: #29a1a4;
+        outline-color: #25272e;
+    }
+    input[type=submit] {
+        font-size: 1.4rem;
+        width: 100%;
+        outline: none;
+        border: solid 4px #29a1a4;
+        padding: 8px;
+        text-transform: uppercase;
+        font-weight: 600;
+    }
+    input[type=submit]:hover {
+        border: solid 4px #25272e;
+        background-color: #f6f6f6;
+    }
+}
+
+li {
+    margin-bottom: 0.5rem;
+}
+
+footer {
+    margin-top: 20px;
+    padding: 20px 0px;
+    width: 100%;
+    max-width: 100%;
+    background-color: black;
+    color: white;
+    a {
+        text-decoration: none;
+    }
+    a:link, a:visited {
+        color: white;
+    }
+    a:active, a:hover {
+        color: antiquewhite;
+    }
+    a {
+        padding: 20px;
+    }
+}

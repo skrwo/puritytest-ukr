@@ -1,0 +1,34 @@
+body {
+    font-family: sans-serif;
+}
+
+#emoji {
+    font-size: 5rem;
+}
+
+#test-result {
+    text-align: center;
+}
+
+#details-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#details {
+
+    width: 40%;
+
+    h2 {
+        margin-top: 0;
+    }
+
+    padding: 10px;
+    margin: 0 20px;
+    background-color: #29a1a4;
+    border-radius: 30px;
+    border-color: #25272e;
+    border-width: 2px;
+    border-style: solid;
+}
