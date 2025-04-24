@@ -1,4 +1,7 @@
+:root {
+    color-scheme: light dark;
+}
 html {
     font-family: sans-serif;
-    color: #25272e;
+    color: light-dark(#25272e, #f6f6f6);
 }
