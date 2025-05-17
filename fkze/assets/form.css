@@ -33,7 +33,7 @@ form {
         font-weight: 600;
     }
     input[type=submit]:hover {
-        border: solid 4px light-dark(#25272e, #29a1a4);
+        border-color: light-dark(#25272e, #29a1a4);
         background-color: light-dark(#f6f6f6, #17181d);
     }
 }
